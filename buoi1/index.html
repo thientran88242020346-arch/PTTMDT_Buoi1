@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hasaki UI Improvement</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- 1. PHẦN HEADER CÓ Ô TÌM KIẾM -->
+    <header class="header">
+      <div class="header-container">
+        <div class="logo">HASAKI.VN</div>
+
+        <div class="search-bar">
+          <input
+            type="text"
+            placeholder="Tìm sản phẩm, thương hiệu bạn mong muốn..."
+          />
+          <button type="button">🔍</button>
+        </div>
+
+        <div class="cart-wrapper" id="cart-icon">
+          <span>🛒 Giỏ hàng</span>
+          <span id="cart-count" class="cart-badge">0</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- 2. THANH DANH MỤC VÀ LỌC -->
+    <nav class="category-nav">
+      <div class="nav-container">
+        <ul class="nav-list">
+          <li><a href="#" class="active">Chăm Sóc Da Mặt</a></li>
+          <li><a href="#">Trang Điểm</a></li>
+          <li><a href="#">Chăm Sóc Cơ Thể</a></li>
+          <li><a href="#">Nước Hoa</a></li>
+        </ul>
+        <div class="filter-btn">
+          <span>Lọc / Sắp xếp ⬇️</span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 3. PHẦN NỘI DUNG CHÍNH & FLASH DEAL -->
+    <div class="container">
+      <div class="flash-deal-header">
+        <h2 class="section-title">⚡ FLASH DEAL</h2>
+        <div class="countdown">
+          Kết thúc trong: <span>02</span> : <span>15</span> : <span>00</span>
+        </div>
+      </div>
+
+      <div class="product-grid">
+        <!-- Thẻ 1: CeraVe -->
+        <div class="product-card" data-category="Chăm Sóc Da Mặt">
+          <div class="discount-badge">-33%</div>
+          <img src="images/cerave.jpg" alt="CeraVe" class="product-img" />
+          <div class="product-info">
+            <h3 class="product-name">
+              Sữa Rửa Mặt CeraVe Sạch Sâu Cho Da Thường Đến Da Dầu 473ml
+            </h3>
+            <div class="product-price">
+              <span class="current-price">328.000 ₫</span>
+              <span class="old-price">490.000 ₫</span>
+            </div>
+          </div>
+          <button
+            class="btn-add-cart"
+            data-name="Sữa Rửa Mặt CeraVe 473ml"
+            data-price="328000"
+            data-img="images/cerave.jpg"
+          >
+            Thêm vào giỏ
+          </button>
+        </div>
+
+        <!-- Thẻ 2: Cocoon -->
+        <div class="product-card" data-category="Chăm Sóc Da Mặt">
+          <div class="discount-badge">-61%</div>
+          <img src="images/cocoon.png" alt="Cocoon" class="product-img" />
+          <div class="product-info">
+            <h3 class="product-name">
+              Combo 2 Nước Tẩy Trang Bí Đao Cocoon Làm Sạch Dầu 500ml
+            </h3>
+            <div class="product-price">
+              <span class="current-price">229.000 ₫</span>
+              <span class="old-price">590.000 ₫</span>
+            </div>
+          </div>
+          <button
+            class="btn-add-cart"
+            data-name="Combo 2 Nước Tẩy Trang Cocoon"
+            data-price="229000"
+            data-img="images/cocoon.png"
+          >
+            Thêm vào giỏ
+          </button>
+        </div>
+
+        <!-- Thẻ 3: Bioderma -->
+        <div class="product-card" data-category="Chăm Sóc Da Mặt">
+          <div class="discount-badge">-41%</div>
+          <img src="images/bioderma.jpg" alt="Bioderma" class="product-img" />
+          <div class="product-info">
+            <h3 class="product-name">
+              Nước Tẩy Trang Bioderma Dành Cho Da Nhạy Cảm Sensibio H2O 500ml
+            </h3>
+            <div class="product-price">
+              <span class="current-price">330.000 ₫</span>
+              <span class="old-price">560.000 ₫</span>
+            </div>
+          </div>
+          <button
+            class="btn-add-cart"
+            data-name="Nước Tẩy Trang Bioderma 500ml"
+            data-price="330000"
+            data-img="images/bioderma.jpg"
+          >
+            Thêm vào giỏ
+          </button>
+        </div>
+
+        <!-- Thẻ 4: Cetaphil -->
+        <div class="product-card" data-category="Chăm Sóc Da Mặt">
+          <div class="discount-badge">-31%</div>
+          <img src="images/cetaphil.jpg" alt="Cetaphil" class="product-img" />
+          <div class="product-info">
+            <h3 class="product-name">
+              Sữa Rửa Mặt Cetaphil Dịu Lành Cho Da Nhạy Cảm 500ml
+            </h3>
+            <div class="product-price">
+              <span class="current-price">343.000 ₫</span>
+              <span class="old-price">499.000 ₫</span>
+            </div>
+          </div>
+          <button
+            class="btn-add-cart"
+            data-name="Sữa Rửa Mặt Cetaphil 500ml"
+            data-price="343000"
+            data-img="images/cetaphil.jpg"
+          >
+            Thêm vào giỏ
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. FOOTER -->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-container">
+          <div class="footer-col">
+            <h4>TOP TÌM KIẾM</h4>
+            <div class="tags">
+              <span>Kem Chống Nắng</span>
+              <span>Nước Tẩy Trang</span>
+              <span>Sữa Rửa Mặt</span>
+              <span>Bông Tẩy Trang</span>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>ĐƯỢC CHỨNG NHẬN</h4>
+            <p>Đã thông báo Bộ Công Thương</p>
+            <p>Bản quyền © 2016 Hasaki.vn</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          Công Ty cổ phần HASAKI VIETNAM - Trụ sở: 71 Hoàng Hoa Thám, Phường 13,
+          Quận Tân Bình, TP.HCM
+        </p>
+      </div>
+    </footer>
+
+    <!-- 5. MODAL (POPUP) GIỎ HÀNG -->
+    <div id="cart-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Giỏ hàng của bạn</h2>
+        <div id="cart-items">
+          <p class="empty-cart">Giỏ hàng đang trống.</p>
+        </div>
+        <div class="cart-footer">
+          <div class="cart-total">
+            Tổng cộng: <strong id="total-price">0 ₫</strong>
+          </div>
+          <button class="btn-checkout">Tiến hành đặt hàng</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT: TÍCH HỢP ĐẦY ĐỦ CÁC CHỨC NĂNG -->
+    <script>
+      /* --- CHỨC NĂNG 1: GIỎ HÀNG THÊM/XEM CHI TIẾT --- */
+      let cart = [];
+      const addToCartButtons = document.querySelectorAll(".btn-add-cart");
+      const cartBadge = document.getElementById("cart-count");
+      const cartIcon = document.getElementById("cart-icon");
+      const cartModal = document.getElementById("cart-modal");
+      const closeBtn = document.querySelector(".close-btn");
+      const cartItemsContainer = document.getElementById("cart-items");
+      const totalPriceElement = document.getElementById("total-price");
+
+      addToCartButtons.forEach((button) => {
+        button.addEventListener("click", function () {
+          const name = this.getAttribute("data-name");
+          const price = parseInt(this.getAttribute("data-price"));
+          const img = this.getAttribute("data-img");
+
+          cart.push({ name, price, img });
+          cartBadge.textContent = cart.length;
+          alert(`Đã thêm: ${name}`);
+          updateCartUI();
+        });
+      });
+
+      function updateCartUI() {
+        if (cart.length === 0) {
+          cartItemsContainer.innerHTML =
+            '<p class="empty-cart">Giỏ hàng đang trống.</p>';
+          totalPriceElement.textContent = "0 ₫";
+          return;
+        }
+        let html = "";
+        let total = 0;
+        cart.forEach((item) => {
+          total += item.price;
+          html += `
+            <div class="cart-item">
+                <img src="${item.img}" alt="${item.name}">
+                <div class="cart-item-info">
+                    <h4>${item.name}</h4>
+                    <span class="cart-item-price">${item.price.toLocaleString("vi-VN")} ₫</span>
+                </div>
+            </div>
+          `;
+        });
+        cartItemsContainer.innerHTML = html;
+        totalPriceElement.textContent = total.toLocaleString("vi-VN") + " ₫";
+      }
+
+      cartIcon.addEventListener("click", () => {
+        cartModal.style.display = "flex";
+      });
+      closeBtn.addEventListener("click", () => {
+        cartModal.style.display = "none";
+      });
+      window.addEventListener("click", (e) => {
+        if (e.target === cartModal) cartModal.style.display = "none";
+      });
+
+      /* --- CHỨC NĂNG 2: ĐỒNG HỒ ĐẾM NGƯỢC FLASH DEAL --- */
+      const countdownEls = document.querySelectorAll(".countdown span");
+      let hours = 2,
+        minutes = 15,
+        seconds = 0;
+      setInterval(() => {
+        if (seconds > 0) {
+          seconds--;
+        } else if (minutes > 0) {
+          minutes--;
+          seconds = 59;
+        } else if (hours > 0) {
+          hours--;
+          minutes = 59;
+          seconds = 59;
+        }
+        countdownEls[0].textContent = hours.toString().padStart(2, "0");
+        countdownEls[1].textContent = minutes.toString().padStart(2, "0");
+        countdownEls[2].textContent = seconds.toString().padStart(2, "0");
+      }, 1000);
+
+      /* --- CHỨC NĂNG 3: TÌM KIẾM SẢN PHẨM --- */
+      const searchInput = document.querySelector(".search-bar input");
+      const productCards = document.querySelectorAll(".product-card");
+      searchInput.addEventListener("input", function (e) {
+        const keyword = e.target.value.toLowerCase().trim();
+        productCards.forEach((card) => {
+          const productName = card
+            .querySelector(".product-name")
+            .textContent.toLowerCase();
+          card.style.display = productName.includes(keyword) ? "flex" : "none";
+        });
+      });
+
+      /* --- CHỨC NĂNG 4: LỌC / SẮP XẾP SẢN PHẨM THEO GIÁ --- */
+      const filterBtn = document.querySelector(".filter-btn");
+      const productGrid = document.querySelector(".product-grid");
+      let isAscending = true;
+      filterBtn.addEventListener("click", () => {
+        let cardsArray = Array.from(productCards);
+        cardsArray.sort((a, b) => {
+          let priceA = parseInt(
+            a.querySelector(".btn-add-cart").getAttribute("data-price"),
+          );
+          let priceB = parseInt(
+            b.querySelector(".btn-add-cart").getAttribute("data-price"),
+          );
+          return isAscending ? priceA - priceB : priceB - priceA;
+        });
+        cardsArray.forEach((card) => productGrid.appendChild(card));
+        filterBtn.innerHTML = `<span>Sắp xếp giá: ${isAscending ? "Tăng dần ⬆️" : "Giảm dần ⬇️"}</span>`;
+        isAscending = !isAscending;
+      });
+
+      /* --- CHỨC NĂNG 5: CLICK CHUYỂN DANH MỤC --- */
+      const navLinks = document.querySelectorAll(".nav-list a");
+      navLinks.forEach((link) => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          navLinks.forEach((l) => l.classList.remove("active"));
+          this.classList.add("active");
+
+          const category = this.textContent;
+          productCards.forEach((card) => {
+            const cardCat = card.getAttribute("data-category");
+            card.style.display = category === cardCat ? "flex" : "none";
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
