@@ -4,23 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bài tập 3 - Giới thiệu UEH</title>
+    <style>
+        body {
+            /* Tinh chỉnh hình nền để không bị phóng quá to và che lấp nội dung */
+            background-image: url("../ueh-logo.jpg");
+            background-size: cover; 
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .video-container {
+            /* Tạo hiệu ứng đổ bóng và viền cho video nổi bật trên nền */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+        }
+        
+        iframe {
+            border: 5px solid #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+    </style>
 </head>
-<body background="../ueh-logo.jpg">
-    <marquee direction="right" behavior="scroll" bgcolor="#005f69">
-        <h2 style="color: #ffffff; margin: 8px 0;">
+<body>
+    <!-- Chữ chạy từ trái qua phải -->
+    <marquee direction="right" behavior="scroll" bgcolor="rgba(0, 95, 105, 0.9)">
+        <h2 style="color: #ffffff; margin: 10px 0; font-family: Arial, sans-serif;">
             Chào mừng bạn đến website của trường ĐHKT TP.HCM
         </h2>
     </marquee>
 
-    <br><br>
-
-    <div align="center">
+    <!-- Nhúng video YouTube tự động chạy và có đầy đủ thanh điều khiển -->
+    <div class="video-container">
         <iframe 
             width="720" 
             height="405" 
             src="https://www.youtube.com/embed/rdzxvQ-5TG4?autoplay=1&mute=1&controls=1" 
             title="Video giới thiệu UEH" 
-            frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
             allowfullscreen>
         </iframe>
