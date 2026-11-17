@@ -6,33 +6,35 @@
     <title>Bài tập 3 - Giới thiệu UEH</title>
     <style>
         body {
-            /* Tinh chỉnh hình nền để không bị phóng quá to và che lấp nội dung */
+            /* Đặt màu nền đồng nhất với ảnh và đưa trọn vẹn logo UEH lên phía trên */
+            background-color: #005f69;
             background-image: url("../ueh-logo.jpg");
-            background-size: cover; 
-            background-position: center;
-            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: 250px;
+            background-position: center 50px;
             margin: 0;
             padding: 0;
         }
         
         .video-container {
-            /* Tạo hiệu ứng đổ bóng và viền cho video nổi bật trên nền */
+            /* Đẩy video nằm ngay bên dưới chữ UNIVERSITY của logo */
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 40px;
+            margin-top: 265px;
+            margin-bottom: 30px;
         }
         
         iframe {
-            border: 5px solid #fff;
+            border: 4px solid #ffffff;
             border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
         }
     </style>
 </head>
 <body>
     <!-- Chữ chạy từ trái qua phải -->
-    <marquee direction="right" behavior="scroll" bgcolor="rgba(0, 95, 105, 0.9)">
+    <marquee direction="right" behavior="scroll" bgcolor="#00444b">
         <h2 style="color: #ffffff; margin: 10px 0; font-family: Arial, sans-serif;">
             Chào mừng bạn đến website của trường ĐHKT TP.HCM
         </h2>
@@ -41,8 +43,8 @@
     <!-- Nhúng video YouTube tự động chạy và có đầy đủ thanh điều khiển -->
     <div class="video-container">
         <iframe 
-            width="720" 
-            height="405" 
+            width="600" 
+            height="338" 
             src="https://www.youtube.com/embed/rdzxvQ-5TG4?autoplay=1&mute=1&controls=1" 
             title="Video giới thiệu UEH" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
